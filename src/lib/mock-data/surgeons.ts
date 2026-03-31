@@ -1,0 +1,230 @@
+import { Surgeon } from '@/types';
+
+const surgeons: Surgeon[] = [
+  {
+    id: '1',
+    slug: 'dr-aleksander-kowalski',
+    name: 'dr n. med. Aleksander Kowalski',
+    title: 'Chirurg plastyk',
+    specializations: ['Rhinoplastyka', 'Lifting twarzy'],
+    bio: 'Wieloletnie doświadczenie w dziedzinie chirurgii plastycznej twarzy. Absolwent Warszawskiego Uniwersytetu Medycznego.',
+    photo: {
+      url: '/images/surgeons/kowalski.jpg',
+      alt: 'Dr Aleksander Kowalski',
+      width: 600,
+      height: 800,
+    },
+    certifications: [
+      {
+        name: 'Fellow of the European Board of Plastic Surgery',
+        issuer: 'EBOPRAS',
+        year: 2018,
+      },
+      {
+        name: 'Certyfikat Polskiego Towarzystwa Chirurgii Plastycznej',
+        issuer: 'PTCHP',
+        year: 2015,
+      },
+    ],
+    clinicSlugs: ['clinique-esthetique'],
+    procedureSlugs: ['rhinoplastyka-estetyczna', 'lifting-twarzy-deep-plane'],
+    yearsExperience: 18,
+    operationsCount: 4200,
+    rating: 4.9,
+    reviewCount: 127,
+    city: 'Warszawa',
+    education: [
+      { degree: 'Wydział Lekarski', institution: 'Warszawski Uniwersytet Medyczny', year: 2005 },
+      { degree: 'Specjalizacja z chirurgii plastycznej', institution: 'Szpital Kliniczny Dzieciątka Jezus', year: 2012 },
+    ],
+    memberships: ['Polskie Towarzystwo Chirurgii Plastycznej', 'Euraps'],
+    seo: {
+      title: 'Dr n. med. Aleksander Kowalski — Chirurg plastyk Warszawa',
+      description: 'Doświadczony chirurg plastyk specjalizujący się w rynoplastyce i liftingu twarzy.',
+    },
+  },
+  {
+    id: '2',
+    slug: 'dr-maria-wisniewska',
+    name: 'dr hab. n. med. Maria Wiśniewska',
+    title: 'Chirurg plastyk, Professor',
+    specializations: ['Chirurgia piersi', 'Mastopeksja'],
+    bio: 'Specjalistka z ponad 20-letnim doświadczeniem w chirurgii piersi. Wieloletnia praca naukowa i kliniczna.',
+    photo: {
+      url: '/images/surgeons/wisniewska.jpg',
+      alt: 'Dr Maria Wiśniewska',
+      width: 600,
+      height: 800,
+    },
+    certifications: [
+      {
+        name: 'Certyfikat międzynarodowy ISAPS',
+        issuer: 'ISAPS',
+        year: 2016,
+      },
+    ],
+    clinicSlugs: ['krakow-plastic-surgery-center'],
+    procedureSlugs: ['powiekszanie-piersi-implantami', 'mastopeksja-klasyczna'],
+    yearsExperience: 22,
+    operationsCount: 5100,
+    rating: 4.8,
+    reviewCount: 98,
+    city: 'Kraków',
+    education: [
+      { degree: 'Wydział Lekarski', institution: 'Collegium Medicum UJ', year: 2000 },
+    ],
+    memberships: ['Polskie Towarzystwo Chirurgii Plastycznej', 'ISAPS'],
+    seo: {
+      title: 'Dr hab. n. med. Maria Wiśniewska — Chirurg plastyk Kraków',
+      description: 'Specjalistka chirurgii piersi z ponad 20-letnim doświadczeniem.',
+    },
+  },
+  {
+    id: '3',
+    slug: 'dr-piotr-nowak',
+    name: 'dr n. med. Piotr Nowak',
+    title: 'Chirurg plastyk',
+    specializations: ['Liposukcja', 'Abdominoplastyka'],
+    bio: 'Ekspert w dziedzinie modelowania sylwetki. Specjalizuje się w zaawansowanych technikach liposukcji.',
+    photo: {
+      url: '/images/surgeons/nowak.jpg',
+      alt: 'Dr Piotr Nowak',
+      width: 600,
+      height: 800,
+    },
+    certifications: [
+      {
+        name: 'Certyfikat Polskiego Towarzystwa Chirurgii Plastycznej',
+        issuer: 'PTCHP',
+        year: 2014,
+      },
+    ],
+    clinicSlugs: ['nova-aesthetica'],
+    procedureSlugs: ['liposukcja-vaser', 'abdominoplastyka-pelna'],
+    yearsExperience: 15,
+    operationsCount: 3200,
+    rating: 4.7,
+    reviewCount: 85,
+    city: 'Wrocław',
+    education: [
+      { degree: 'Wydział Lekarski', institution: 'Uniwersytet Medyczny we Wrocławiu', year: 2008 },
+    ],
+    memberships: ['Polskie Towarzystwo Chirurgii Plastycznej'],
+    seo: {
+      title: 'Dr n. med. Piotr Nowak — Chirurg plastyk Wrocław',
+      description: 'Specjalista liposukcji i abdominoplastyki we Wrocławiu.',
+    },
+  },
+  {
+    id: '4',
+    slug: 'dr-anna-kaminska',
+    name: 'dr n. med. Anna Kamińska',
+    title: 'Chirurg plastyk',
+    specializations: ['Blefaroplastyka', 'Lipofilling'],
+    bio: 'Specjalistka w dziedzinie odmładzania twarzy i zabiegów regeneracyjnych.',
+    photo: {
+      url: '/images/surgeons/kaminska.jpg',
+      alt: 'Dr Anna Kamińska',
+      width: 600,
+      height: 800,
+    },
+    certifications: [
+      {
+        name: 'Certyfikat Polskiego Towarzystwa Chirurgii Plastycznej',
+        issuer: 'PTCHP',
+        year: 2013,
+      },
+    ],
+    clinicSlugs: ['baltic-beauty-clinic'],
+    procedureSlugs: ['blefaroplastyka-gorna', 'lipofilling-twarzy'],
+    yearsExperience: 20,
+    operationsCount: 3800,
+    rating: 4.9,
+    reviewCount: 112,
+    city: 'Gdańsk',
+    education: [
+      { degree: 'Wydział Lekarski', institution: 'Gdański Uniwersytet Medyczny', year: 2003 },
+    ],
+    memberships: ['Polskie Towarzystwo Chirurgii Plastycznej'],
+    seo: {
+      title: 'Dr n. med. Anna Kamińska — Chirurg plastyk Gdańsk',
+      description: 'Specjalistka blefaroplastyki i lipofillingu w Gdańsku.',
+    },
+  },
+  {
+    id: '5',
+    slug: 'dr-tomasz-lewandowski',
+    name: 'dr n. med. Tomasz Lewandowski',
+    title: 'Chirurg plastyk',
+    specializations: ['Otoplastyka', 'Rekonstrukcja'],
+    bio: 'Specjalista w dziedzinie chirurgii rekonstrukcyjnej i korekcyjnej.',
+    photo: {
+      url: '/images/surgeons/lewandowski.jpg',
+      alt: 'Dr Tomasz Lewandowski',
+      width: 600,
+      height: 800,
+    },
+    certifications: [
+      {
+        name: 'Certyfikat Polskiego Towarzystwa Chirurgii Plastycznej',
+        issuer: 'PTCHP',
+        year: 2017,
+      },
+    ],
+    clinicSlugs: ['poznan-chirurgia'],
+    procedureSlugs: ['otoplastyka', 'usuwanie-blizn'],
+    yearsExperience: 12,
+    operationsCount: 2100,
+    rating: 4.6,
+    reviewCount: 67,
+    city: 'Poznań',
+    education: [
+      { degree: 'Wydział Lekarski', institution: 'Uniwersytet Medyczny w Poznaniu', year: 2011 },
+    ],
+    memberships: ['Polskie Towarzystwo Chirurgii Plastycznej'],
+    seo: {
+      title: 'Dr n. med. Tomasz Lewandowski — Chirurg plastyk Poznań',
+      description: 'Specjalista otoplastyki i rekonstrukcji w Poznaniu.',
+    },
+  },
+  {
+    id: '6',
+    slug: 'dr-katarzyna-zielinska',
+    name: 'dr hab. n. med. Katarzyna Zielińska',
+    title: 'Chirurg plastyk, Professor',
+    specializations: ['Chirurgia intymna', 'Labioplastyka'],
+    bio: 'Pionierka chirurgii intymnej w Polsce. Wieloletnie doświadczenie i praca naukowa.',
+    photo: {
+      url: '/images/surgeons/zielinska.jpg',
+      alt: 'Dr Katarzyna Zielińska',
+      width: 600,
+      height: 800,
+    },
+    certifications: [
+      {
+        name: 'Certyfikat międzynarodowy ISAPS',
+        issuer: 'ISAPS',
+        year: 2015,
+      },
+    ],
+    clinicSlugs: ['lodz-aesthetic-institute'],
+    procedureSlugs: ['labioplastyka', 'lipofilling-posladkow-bbl'],
+    yearsExperience: 16,
+    operationsCount: 2800,
+    rating: 4.8,
+    reviewCount: 73,
+    city: 'Łódź',
+    education: [
+      { degree: 'Wydział Lekarski', institution: 'Uniwersytet Medyczny w Łodzi', year: 2007 },
+    ],
+    memberships: ['Polskie Towarzystwo Chirurgii Plastycznej', 'ISAPS'],
+    seo: {
+      title: 'Dr hab. n. med. Katarzyna Zielińska — Chirurg plastyk Łódź',
+      description: 'Specjalistka chirurgii intymnej w Łodzi.',
+    },
+  },
+];
+
+export function getMockSurgeons() {
+  return surgeons;
+}

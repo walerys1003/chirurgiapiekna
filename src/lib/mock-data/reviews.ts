@@ -1,0 +1,73 @@
+import { PatientReview } from '@/types';
+
+const reviews: PatientReview[] = [
+  {
+    id: '1',
+    procedureSlug: 'rhinoplastyka-estetyczna',
+    surgeonSlug: 'dr-aleksander-kowalski',
+    clinicSlug: 'clinique-esthetique',
+    patientInitials: 'A.K.',
+    patientAge: 28,
+    patientCity: 'Warszawa',
+    rating: 5,
+    content: 'Dr Kowalski wykonał niesamowitą pracę. Mój nos wygląda naturalnie, a jednocześnie jest pięknie wymodelowany. Efekt przeszedł moje najśmielsze oczekiwania.',
+    procedureName: 'Rhinoplastyka estetyczna',
+    publishedAt: '2026-02-15',
+  },
+  {
+    id: '2',
+    procedureSlug: 'powiekszanie-piersi-implantami',
+    surgeonSlug: 'dr-maria-wisniewska',
+    clinicSlug: 'krakow-plastic-surgery-center',
+    patientInitials: 'M.N.',
+    patientAge: 32,
+    patientCity: 'Kraków',
+    rating: 5,
+    content: 'Pani doktor jest prawdziwą profesjonalistką. Efekt jest bardzo naturalny, a sama klinika przekroczyła moje oczekiwania. Polecam każdemu!',
+    procedureName: 'Powiększanie piersi implantami',
+    publishedAt: '2026-02-10',
+  },
+  {
+    id: '3',
+    procedureSlug: 'liposukcja-vaser',
+    surgeonSlug: 'dr-piotr-nowak',
+    clinicSlug: 'nova-aesthetica',
+    patientInitials: 'K.W.',
+    patientAge: 35,
+    patientCity: 'Wrocław',
+    rating: 4,
+    content: 'Dobry efekt, choć rekonwalescencja trwała dłużej niż się spodziewałam. Ale warto było — mogę w końcu założyć wszystkie ubrania bez kompleksów.',
+    procedureName: 'Liposukcja VASER',
+    publishedAt: '2026-01-28',
+  },
+  {
+    id: '4',
+    procedureSlug: 'blefaroplastyka-gorna',
+    surgeonSlug: 'dr-anna-kaminska',
+    clinicSlug: 'baltic-beauty-clinic',
+    patientInitials: 'E.B.',
+    patientAge: 52,
+    patientCity: 'Gdańsk',
+    rating: 5,
+    content: 'Wreszcie wyglądam wypoczęta! Pani doktor zrobiła świetną robotę, a blizny są praktycznie niewidoczne. Polecam serdecznie!',
+    procedureName: 'Blefaroplastyka górna',
+    publishedAt: '2026-01-20',
+  },
+  {
+    id: '5',
+    procedureSlug: 'lifting-twarzy-deep-plane',
+    surgeonSlug: 'dr-aleksander-kowalski',
+    clinicSlug: 'clinique-esthetique',
+    patientInitials: 'J.L.',
+    patientAge: 48,
+    patientCity: 'Warszawa',
+    rating: 5,
+    content: 'Decyzja o liftingu była trudna, ale nie żałuję ani sekundy. Efekt jest subtelny i naturalny — wyglądam na 35 lat, a czuję się świetnie!',
+    procedureName: 'Lifting twarzy deep plane',
+    publishedAt: '2026-01-15',
+  },
+];
+
+export function getMockReviews() {
+  return reviews;
+}

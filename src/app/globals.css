@@ -1,1 +1,97 @@
 @import "tailwindcss";
+
+@theme {
+  --color-obsidian-950: #08111E;
+  --color-obsidian-900: #0C1829;
+  --color-obsidian-800: #121F35;
+  --color-obsidian-700: #1A2A45;
+  --color-obsidian-600: #243756;
+  --color-obsidian-500: #334D6E;
+
+  --color-champagne-600: #9E8A5E;
+  --color-champagne-500: #B8A170;
+  --color-champagne-400: #CBBA8B;
+  --color-champagne-300: #DDD0A8;
+  --color-champagne-200: #EBE2C8;
+  --color-champagne-100: #F4F0E0;
+  --color-champagne-50: #FAF8F2;
+
+  --color-porcelain-50: #FCFBF9;
+  --color-porcelain-100: #F7F6F2;
+  --color-porcelain-200: #EFEDE7;
+  --color-porcelain-300: #E2DFD6;
+  --color-porcelain-400: #C8C4B8;
+  --color-porcelain-500: #A09B8E;
+  --color-porcelain-600: #78746A;
+  --color-porcelain-700: #55524A;
+  --color-porcelain-800: #38362F;
+  --color-porcelain-900: #1E1D19;
+
+  --color-area-face: #7B6B8E;
+  --color-area-breast: #A07878;
+  --color-area-body: #5D7E8E;
+  --color-area-intimate: #8E7E6E;
+  --color-area-recon: #5E8E6E;
+
+  --color-success: #3B8B6E;
+  --color-warning: #C49A4C;
+  --color-danger: #B04848;
+  --color-info: #4A7FB8;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+
+  --shadow-subtle: 0 1px 2px rgba(8,17,30,0.04);
+  --shadow-card: 0 4px 24px rgba(8,17,30,0.06), 0 1px 4px rgba(8,17,30,0.03);
+  --shadow-elevated: 0 12px 48px rgba(8,17,30,0.08), 0 2px 8px rgba(8,17,30,0.04);
+  --shadow-floating: 0 24px 80px rgba(8,17,30,0.10), 0 4px 16px rgba(8,17,30,0.05);
+
+  --container-max: 1520px;
+  --content-max: 780px;
+  --section-gap: clamp(80px, 12vh, 160px);
+}
+
+:root {
+  --glass-bg: rgba(252, 251, 249, 0.72);
+  --glass-border: rgba(184, 161, 112, 0.12);
+  --glass-blur: 20px;
+
+  --font-display: 'Libre Caslon Display', Georgia, serif;
+  --font-heading: 'Libre Caslon Text', Georgia, serif;
+  --font-body: 'Outfit', -apple-system, sans-serif;
+  --font-data: 'IBM Plex Mono', monospace;
+  --font-accent: 'Cormorant Garamond', Georgia, serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-porcelain-50);
+  color: var(--color-porcelain-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+::selection {
+  background-color: var(--color-champagne-200);
+  color: var(--color-obsidian-900);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

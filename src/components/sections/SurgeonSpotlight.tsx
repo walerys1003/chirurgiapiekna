@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import { SurgeonCard } from '@/components/cards/SurgeonCard';
 import { getMockSurgeons } from '@/lib/mock-data';

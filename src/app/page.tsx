@@ -1,33 +1,39 @@
+import { HeroEditorial } from '@/components/sections/HeroEditorial';
+import { FeaturedProcedures } from '@/components/sections/FeaturedProcedures';
+import { BeforeAfterShowcase } from '@/components/sections/BeforeAfterShowcase';
+import { SurgeonSpotlight } from '@/components/sections/SurgeonSpotlight';
+import { TrendingNow } from '@/components/sections/TrendingNow';
+import { PatientStories } from '@/components/sections/PatientStories';
+import { PriceGuideTeaser } from '@/components/sections/PriceGuideTeaser';
+import { SEOContentBlock } from '@/components/sections/SEOContentBlock';
+
 export default function Home() {
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '16px',
-      }}
-    >
-      <h1
-        style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: '36px',
-          color: 'var(--color-obsidian-900)',
-        }}
-      >
-        ChirurgiaPiekna.com
-      </h1>
-      <p
-        style={{
-          fontFamily: 'var(--font-body)',
-          fontSize: '16px',
-          color: 'var(--color-porcelain-500)',
-        }}
-      >
-        Strona w budowie
-      </p>
-    </div>
+    <>
+      <section>
+        <HeroEditorial />
+      </section>
+      <section>
+        <FeaturedProcedures />
+      </section>
+      <section>
+        <BeforeAfterShowcase />
+      </section>
+      <section>
+        <SurgeonSpotlight />
+      </section>
+      <section>
+        <TrendingNow />
+      </section>
+      <section>
+        <PatientStories />
+      </section>
+      <section>
+        <PriceGuideTeaser />
+      </section>
+      <section>
+        <SEOContentBlock />
+      </section>
+    </>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import { ProcedureCard } from '@/components/cards/ProcedureCard';
 import { getMockProcedures } from '@/lib/mock-data';

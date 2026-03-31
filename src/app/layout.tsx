@@ -8,6 +8,8 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { MedicalDisclaimer } from "@/components/layout/MedicalDisclaimer";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/config/site";
 
 const libreCaslonDisplay = Libre_Caslon_Display({
@@ -71,7 +73,9 @@ export default function RootLayout({
     >
       <body className="antialiased" style={{ backgroundColor: 'var(--color-porcelain-50)' }}>
         <MedicalDisclaimer />
-        {children}
+        <Header />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );

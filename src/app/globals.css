@@ -1,1 +1,100 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* PRIMARY — Obsidian */
+  --obsidian-950: #08111E;
+  --obsidian-900: #0C1829;
+  --obsidian-800: #121F35;
+  --obsidian-700: #1A2A45;
+  --obsidian-600: #243756;
+  --obsidian-500: #334D6E;
+
+  /* ACCENT — Champagne */
+  --champagne-600: #9E8A5E;
+  --champagne-500: #B8A170;
+  --champagne-400: #CBBA8B;
+  --champagne-300: #DDD0A8;
+  --champagne-200: #EBE2C8;
+  --champagne-100: #F4F0E0;
+  --champagne-50: #FAF8F2;
+
+  /* SURFACE — Porcelain */
+  --porcelain-50: #FCFBF9;
+  --porcelain-100: #F7F6F2;
+  --porcelain-200: #EFEDE7;
+  --porcelain-300: #E2DFD6;
+  --porcelain-400: #C8C4B8;
+  --porcelain-500: #A09B8E;
+  --porcelain-600: #78746A;
+  --porcelain-700: #55524A;
+  --porcelain-800: #38362F;
+  --porcelain-900: #1E1D19;
+
+  /* BODY AREA ACCENTS */
+  --area-face: #7B6B8E;
+  --area-breast: #A07878;
+  --area-body: #5D7E8E;
+  --area-intimate: #8E7E6E;
+  --area-recon: #5E8E6E;
+
+  /* SEMANTIC */
+  --success: #3B8B6E;
+  --warning: #C49A4C;
+  --danger: #B04848;
+  --info: #4A7FB8;
+
+  /* GLASS */
+  --glass-bg: rgba(252, 251, 249, 0.72);
+  --glass-border: rgba(184, 161, 112, 0.12);
+  --glass-blur: 20px;
+
+  /* SHADOWS */
+  --shadow-subtle: 0 1px 2px rgba(8,17,30,0.04);
+  --shadow-card: 0 4px 24px rgba(8,17,30,0.06), 0 1px 4px rgba(8,17,30,0.03);
+  --shadow-elevated: 0 12px 48px rgba(8,17,30,0.08), 0 2px 8px rgba(8,17,30,0.04);
+  --shadow-floating: 0 24px 80px rgba(8,17,30,0.10), 0 4px 16px rgba(8,17,30,0.05);
+
+  /* TYPOGRAPHY */
+  --font-display: 'Libre Caslon Display', Georgia, serif;
+  --font-heading: 'Libre Caslon Text', Georgia, serif;
+  --font-body: 'Outfit', -apple-system, sans-serif;
+  --font-data: 'IBM Plex Mono', monospace;
+  --font-accent: 'Cormorant Garamond', Georgia, serif;
+
+  /* SPACING */
+  --container-max: 1520px;
+  --content-max: 780px;
+  --section-gap: clamp(80px, 12vh, 160px);
+
+  /* RADIUS */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--porcelain-50);
+  color: var(--porcelain-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 { font-family: var(--font-display); }
+h4, h5, h6 { font-family: var(--font-heading); }
+
+::selection {
+  background-color: var(--champagne-200);
+  color: var(--obsidian-900);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
